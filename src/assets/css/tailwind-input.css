@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.show-box {
+    @apply border-2 border-red-500;
+}
+
+.show-box-2 {
+    @apply border-2 border-blue-500;
+}

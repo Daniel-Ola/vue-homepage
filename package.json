@@ -5,9 +5,11 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "buildtailwind": "npx tailwindcss -i ./src/assets/css/tailwind-input.css -o ./src/assets/css/tailwind-output.css --watch"
   },
   "dependencies": {
+    "aos-vue": "^0.0.5",
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
@@ -26,7 +28,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
     "lint-staged": "^11.1.2",
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "tailwindcss": "^3.0.23"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
