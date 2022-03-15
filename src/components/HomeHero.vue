@@ -4,7 +4,7 @@
     <router-link to="/about">About</router-link>
   </nav> -->
 
-  <header class="bg-dark-blue h-screen">
+  <header class="bg-dark-blue h-screen md-only:h-full">
     <nav class="container flex item-center py-12 mx-auto">
       <div class="py-1">
         <img :src="$store.state.appLogo" alt="" />
@@ -27,13 +27,13 @@
 
     <div class="container flex item-center mt-4 mx-auto p-3 gap-[200px]">
       <div
-        class="flex flex-col basis-1/2 gap-10 items-start justify-start text-white py-4"
+        class="flex flex-col lg:basis-1/2 gap-10 items-center lg:items-start lg:w-full w-1/2 mx-auto justify-center lg:justify-start text-white py-4 md-only:py-0"
       >
-        <h2 class="text-5xl font-light text-left">
+        <h2 class="text-5xl font-light text-center lg:text-left md-only:mb-7">
           Blue-collar Staffing & Maintenance Solutions
         </h2>
         <!-- <p>Hire Blue-colar staff and get maintenance for your company</p> -->
-        <p class="text-justify">
+        <p class="text-justify md-only:text-center md-only:mb-7">
           At ArtisanOga we make it easy for businesses to hire bluecollar
           workers across Nigeria. Currently we have verified professionals in
           over 30 categories ranging from tailors, to beauticians, to plumbers,
@@ -45,12 +45,12 @@
         </button>
       </div>
 
-      <div class="flex basis-1/2 z-10">
+      <div class="lg:flex basis-1/2 z-10 hidden">
         <img :src="artisan_example" alt="" />
       </div>
     </div>
 
-    <div class="absolute top-0 right-0 overflow-hidden">
+    <div class="md:absolute top-0 right-0 overflow-hidden hidden">
       <div class="relative -right-12 -top-12">
         <img :src="ellipse" alt="" />
       </div>

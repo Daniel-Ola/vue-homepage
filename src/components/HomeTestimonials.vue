@@ -4,7 +4,9 @@
       An enterprise staffing solution for your company
     </h2>
 
-    <div class="flex flex-row flex-1 mt-16 gap-4 items-center justify-center">
+    <div
+      class="lg:flex lg:flex-row lg:flex-1 mt-16 lg:gap-4 items-centers justify-center grid grid-cols-2 gap-10 justify-center"
+    >
       <home-testimonial-item
         v-for="(testimonial, index) in testimonials"
         :key="index"

@@ -1,5 +1,5 @@
 <template>
-  <div class="card bg-white rounded-md p-7 basis-1/3s w-1/4">
+  <div class="card bg-white rounded-md p-7 lg:w-1/4">
     <div class="details text-left">
       {{ testimonial.description }}
     </div>

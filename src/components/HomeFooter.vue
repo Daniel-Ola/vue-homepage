@@ -3,18 +3,25 @@
     <div class="container mx-auto p-10">
       <div class="grid grid-cols-4 gap-6">
         <div class="flex flex-col gap-4">
-          <div class="footer-logo">
+          <div class="footer-logo md-only:mb-5">
             <img :src="$store.state.appLogo" alt="App Logo" />
           </div>
-          <p class="text-left">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil omnis
-            animi adipisci eius illo ipsum odio! Iste aspernatur, iure quibusdam
-            alias ex, optio dicta itaque ipsa molestias repellendus placeat
-            sunt?
-          </p>
-          <p class="text-left">All rights reserved</p>
+          <div>
+            <p class="text-left md-only:mb-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+              omnis animi adipisci eius illo ipsum odio! Iste aspernatur, iure
+              quibusdam alias ex, optio dicta itaque ipsa molestias repellendus
+              placeat sunt?
+            </p>
+          </div>
+          <div>
+            <p class="text-left">All rights reserved</p>
+          </div>
         </div>
-        <div class="flex flex-1 gap-4 col-span-3 px-24 gap-48">
+
+        <div
+          class="grid grid-cols-3 gap-4 col-span-3 px-24 md-only:grid-cols-3 gap-48 md-only:gap-40"
+        >
           <div class="footer-links flex flex-col gap-4 items-start">
             <h1 class="text-lg font-bold text-white">Landings</h1>
             <a href="#">Home</a>

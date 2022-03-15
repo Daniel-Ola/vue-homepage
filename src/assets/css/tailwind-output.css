@@ -523,20 +523,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 135px;
 }
 
-.top-36 {
-  top: 9rem;
-}
-
-.left-20 {
-  left: 5rem;
-}
-
 .z-10 {
   z-index: 10;
 }
 
 .col-span-3 {
   grid-column: span 3 / span 3;
+}
+
+.col-span-1 {
+  grid-column: span 1 / span 1;
 }
 
 .mx-auto {
@@ -572,6 +568,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.75rem;
 }
 
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
 .mt-28 {
   margin-top: 7rem;
 }
@@ -598,10 +598,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-4 {
   margin-bottom: 1rem;
-}
-
-.ml-3 {
-  margin-left: 0.75rem;
 }
 
 .mt-6 {
@@ -636,6 +632,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 3rem;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .w-4\/5 {
   width: 80%;
 }
@@ -652,20 +652,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-32 {
   width: 8rem;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-1\/4 {
-  width: 25%;
 }
 
 .w-12 {
@@ -684,10 +676,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-basis: 50%;
 }
 
-.basis-1 {
-  flex-basis: 0.25rem;
-}
-
 .basis-full {
   flex-basis: 100%;
 }
@@ -696,12 +684,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   cursor: pointer;
 }
 
+.list-outside {
+  list-style-position: outside;
+}
+
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.flex-row {
-  flex-direction: row;
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -720,16 +716,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
-.justify-start {
-  justify-content: flex-start;
-}
-
 .justify-end {
   justify-content: flex-end;
 }
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-items-center {
+  justify-items: center;
 }
 
 .gap-6 {
@@ -892,11 +888,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 4rem;
 }
 
-.px-32 {
-  padding-left: 8rem;
-  padding-right: 8rem;
-}
-
 .py-2\.5 {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
@@ -1049,8 +1040,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
-  .md\:hidden {
-    display: none;
+  .md\:absolute {
+    position: absolute;
   }
 
   .md\:flex-row {
@@ -1059,5 +1050,145 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:flex-row-reverse {
     flex-direction: row-reverse;
+  }
+}
+
+@media (max-width: 768px) {
+  .md-only\:mb-7 {
+    margin-bottom: 1.75rem;
+  }
+
+  .md-only\:ml-5 {
+    margin-left: 1.25rem;
+  }
+
+  .md-only\:mr-5 {
+    margin-right: 1.25rem;
+  }
+
+  .md-only\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
+  .md-only\:grid {
+    display: grid;
+  }
+
+  .md-only\:h-full {
+    height: 100%;
+  }
+
+  .md-only\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md-only\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md-only\:grid-rows-3 {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+
+  .md-only\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .md-only\:gap-24 {
+    gap: 6rem;
+  }
+
+  .md-only\:gap-28 {
+    gap: 7rem;
+  }
+
+  .md-only\:gap-32 {
+    gap: 8rem;
+  }
+
+  .md-only\:gap-36 {
+    gap: 9rem;
+  }
+
+  .md-only\:gap-40 {
+    gap: 10rem;
+  }
+
+  .md-only\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .md-only\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .md-only\:text-center {
+    text-align: center;
+  }
+
+  .md-only\:text-justify {
+    text-align: justify;
+  }
+
+  .md-only\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md-only\:font-bold {
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:w-1\/4 {
+    width: 25%;
+  }
+
+  .lg\:flex-1 {
+    flex: 1 1 0%;
+  }
+
+  .lg\:basis-1\/2 {
+    flex-basis: 50%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:items-start {
+    align-items: flex-start;
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .lg\:gap-24 {
+    gap: 6rem;
+  }
+
+  .lg\:gap-4 {
+    gap: 1rem;
+  }
+
+  .lg\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 }

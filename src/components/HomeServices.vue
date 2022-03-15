@@ -10,23 +10,26 @@
       :duration="600"
       :delay="300"
       :once="true"
-      class="flex flex-1 justify-center mt-4 gap-24 mt-10"
+      class="flex flex-1 justify-center mt-4 lg:gap-24 mt-10"
     >
       <!--  *easing="ease" :offset="50" -->
       <!-- <div class="flex flex-1 justify-center mt-4 gap-24 mt-10"> -->
-      <div v-for="(service, index) in services" :key="index">
-        <home-services-card
-          :img="service.img"
-          :title="service.title"
-          :details="service.details"
-        />
-      </div>
+      <!-- <div> -->
+      <home-services-card
+        :img="service.img"
+        :title="service.title"
+        :details="service.details"
+        v-for="(service, index) in services"
+        :key="index"
+        class="ml-3"
+      />
+      <!-- </div> -->
       <!-- </div> -->
     </aos-vue>
 
-    <div class="content-center basis-1 justify-center mt-28">
+    <div class="content-center justify-center mt-28">
       <div
-        class="flex flex-1 basis-full md:flex-row flex-col items-center gap-36 px-32 justify-center mt-16"
+        class="flex flex-1 basis-full md:flex-row flex-col items-center gap-36 lg:px-32 justify-center mt-16"
       >
         <aos-vue
           :once="true"
@@ -38,41 +41,44 @@
           <div class="caller-image">
             <img :src="servicesCaller" alt="" />
           </div>
-          <!-- <div class="absolute z-1 top-36 left-20">
-                        <img :src="servicesGraph" alt="">
-                    </div> -->
         </aos-vue>
         <aos-vue
           :once="true"
           animation="fade-left"
           :duration="600"
           :delay="300"
-          class="flex flex-col gap-4 text-left w-1/2"
+          class="flex flex-col gap-4 text-left w-1/2 md-only:ml-5"
         >
-          <h3 class="font-black text-2xl">
+          <h3 class="font-black md-only:font-bold text-2xl md-only:text-xl">
             We connect our customers with the best, and help them keep up-and
             stay open.
           </h3>
           <ul class="flex flex-col gap-5 mt-7">
-            <li>
-              <app-icon
-                icon="check"
-                customize="rounded-full bg-dark-blue text-white p-1 mr-4"
-              />
+            <li class="flex">
+              <div>
+                <app-icon
+                  icon="check"
+                  customize="rounded-full bg-dark-blue text-white p-1 mr-4"
+                />
+              </div>
               We connect artisans with prospective employers
             </li>
-            <li>
-              <app-icon
-                icon="check"
-                customize="rounded-full bg-dark-blue text-white p-1 mr-4"
-              />
+            <li class="flex">
+              <div>
+                <app-icon
+                  icon="check"
+                  customize="rounded-full bg-dark-blue text-white p-1 mr-4"
+                />
+              </div>
               We provide training and certification for our clients
             </li>
-            <li>
-              <app-icon
-                icon="check"
-                customize="rounded-full bg-dark-blue text-white p-1 mr-4"
-              />
+            <li class="flex">
+              <div>
+                <app-icon
+                  icon="check"
+                  customize="rounded-full bg-dark-blue text-white p-1 mr-4"
+                />
+              </div>
               We assist companies in staffing
             </li>
           </ul>
@@ -86,7 +92,7 @@
       </div>
 
       <div
-        class="flex flex-1 basis-full md:flex-row-reverse md:flex-row flex-col items-center gap-36 px-32 justify-center mt-48"
+        class="flex flex-1 basis-full md:flex-row-reverse flex-col items-center gap-36 lg:px-32 justify-center mt-48"
       >
         <aos-vue
           :once="true"
@@ -98,41 +104,44 @@
           <div class="caller-image">
             <img :src="servicesCaller" alt="" />
           </div>
-          <!-- <div class="absolute z-1 top-36 left-20">
-                        <img :src="servicesGraph" alt="">
-                    </div> -->
         </aos-vue>
         <aos-vue
           :once="true"
           animation="fade-left"
           :duration="600"
           :delay="300"
-          class="flex flex-col gap-4 text-left w-1/2"
+          class="flex flex-col gap-4 text-left w-1/2 md-only:mr-5"
         >
-          <h3 class="font-black text-2xl">
+          <h3 class="font-black md-only:font-bold text-2xl md-only:text-xl">
             We connect our customers with the best, and help them keep up-and
             stay open.
           </h3>
-          <ul class="flex flex-col gap-5 mt-7">
-            <li>
-              <app-icon
-                icon="check"
-                customize="rounded-full bg-dark-blue text-white p-1 mr-4"
-              />
+          <ul class="flex flex-col gap-5 mt-7 list-outside">
+            <li class="flex">
+              <div>
+                <app-icon
+                  icon="check"
+                  customize="rounded-full bg-dark-blue text-white p-1 mr-4"
+                />
+              </div>
               We connect artisans with prospective employers
             </li>
-            <li>
-              <app-icon
-                icon="check"
-                customize="rounded-full bg-dark-blue text-white p-1 mr-4"
-              />
+            <li class="flex">
+              <div>
+                <app-icon
+                  icon="check"
+                  customize="rounded-full bg-dark-blue text-white p-1 mr-4"
+                />
+              </div>
               We provide training and certification for our clients
             </li>
-            <li>
-              <app-icon
-                icon="check"
-                customize="rounded-full bg-dark-blue text-white p-1 mr-4"
-              />
+            <li class="flex">
+              <div>
+                <app-icon
+                  icon="check"
+                  customize="rounded-full bg-dark-blue text-white p-1 mr-4"
+                />
+              </div>
               We assist companies in staffing
             </li>
           </ul>
