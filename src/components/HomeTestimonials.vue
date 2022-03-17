@@ -1,11 +1,11 @@
 <template>
-  <section class="relative bg-dark-blue p-24">
+  <section class="relative bg-dark-blue sm:p-24 p-20">
     <h2 class="testimonial-heading text-3xl text-white font-light text-left">
       An enterprise staffing solution for your company
     </h2>
 
     <div
-      class="lg:flex lg:flex-row lg:flex-1 mt-16 lg:gap-4 items-centers justify-center grid grid-cols-2 gap-10 justify-center"
+      class="lg:flex lg:flex-row lg:flex-1 mt-16 lg:gap-4 items-centers justify-center grid grid-cols-2 sm-only:grid-cols-1 gap-10 justify-center"
     >
       <home-testimonial-item
         v-for="(testimonial, index) in testimonials"

@@ -10,7 +10,7 @@
       :duration="600"
       :delay="300"
       :once="true"
-      class="flex flex-1 justify-center mt-4 lg:gap-24 mt-10"
+      class="sm:flex sm:flex-1 grid grid-cols-1 sm-only:gap-4 justify-center mt-4 lg:gap-24 mt-10"
     >
       <!--  *easing="ease" :offset="50" -->
       <!-- <div class="flex flex-1 justify-center mt-4 gap-24 mt-10"> -->
@@ -29,14 +29,14 @@
 
     <div class="content-center justify-center mt-28">
       <div
-        class="flex flex-1 basis-full md:flex-row flex-col items-center gap-36 lg:px-32 justify-center mt-16"
+        class="flex flex-1 basis-full md:flex-row flex-col items-center sm:gap-36 gap-10 lg:px-32 justify-center mt-16"
       >
         <aos-vue
           :once="true"
           animation="fade-down"
           :duration="600"
           :delay="300"
-          class="item-image w-1/2"
+          class="item-image sm:w-1/2 w-full"
         >
           <div class="caller-image">
             <img :src="servicesCaller" alt="" />
@@ -47,9 +47,9 @@
           animation="fade-left"
           :duration="600"
           :delay="300"
-          class="flex flex-col gap-4 text-left w-1/2 md-only:ml-5"
+          class="flex flex-col gap-4 text-left sm:w-1/2 w-full sm:ml-5"
         >
-          <h3 class="font-black md-only:font-bold text-2xl md-only:text-xl">
+          <h3 class="font-black md-only:font-bold lg:text-2xl text-xl">
             We connect our customers with the best, and help them keep up-and
             stay open.
           </h3>
@@ -92,14 +92,14 @@
       </div>
 
       <div
-        class="flex flex-1 basis-full md:flex-row-reverse flex-col items-center gap-36 lg:px-32 justify-center mt-48"
+        class="flex flex-1 basis-full md:flex-row-reverse flex-col items-center sm:gap-36 gap-10 lg:px-32 justify-center mt-48"
       >
         <aos-vue
           :once="true"
           animation="fade-down"
           :duration="600"
           :delay="300"
-          class="item-image w-1/2"
+          class="item-image sm:w-1/2 w-full"
         >
           <div class="caller-image">
             <img :src="servicesCaller" alt="" />
@@ -110,9 +110,11 @@
           animation="fade-left"
           :duration="600"
           :delay="300"
-          class="flex flex-col gap-4 text-left w-1/2 md-only:mr-5"
+          class="flex flex-col gap-4 text-left sm:w-1/2 w-full sm:mr-5"
         >
-          <h3 class="font-black md-only:font-bold text-2xl md-only:text-xl">
+          <h3
+            class="font-black md-only:font-bold lg:text-2xl text-xl sm-only:text-sms sm-only:mt-4"
+          >
             We connect our customers with the best, and help them keep up-and
             stay open.
           </h3>

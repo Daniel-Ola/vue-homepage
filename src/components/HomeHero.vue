@@ -5,7 +5,7 @@
   </nav> -->
 
   <header class="bg-dark-blue h-screen md-only:h-full">
-    <nav class="container flex item-center py-12 mx-auto">
+    <nav class="container flex item-center sm:py-12 mx-auto">
       <div class="py-1">
         <img :src="$store.state.appLogo" alt="" />
       </div>
@@ -20,9 +20,6 @@
           Get Started
         </button>
       </ul>
-      <div class="flex flex-1 sm:hidden justify-end">
-        <i class="fa fa-bars text-2xl"></i>
-      </div>
     </nav>
 
     <div class="container flex item-center mt-4 mx-auto p-3 gap-[200px]">
@@ -50,7 +47,7 @@
       </div>
     </div>
 
-    <div class="md:absolute top-0 right-0 overflow-hidden hidden">
+    <div class="lg:absolute top-0 right-0 overflow-hidden hidden">
       <div class="relative -right-12 -top-12">
         <img :src="ellipse" alt="" />
       </div>

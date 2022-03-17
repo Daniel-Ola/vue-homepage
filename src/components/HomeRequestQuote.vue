@@ -2,16 +2,14 @@
   <section class="relative mt-10 mb-10">
     <div class="container bg-dark-blues mx-auto w-4/5 rounded-lg py-24">
       <h1 class="text-3xl font-bold text-dark-blue text-center mb-16">
-        <pre>
-We've got a slippery DM.
-                Request a quote now!</pre
-        >
+        <p class="text-center mb-3 hidden sm:block">We've got a slippery DM.</p>
+        <p class="text-center">Request a quote now!</p>
       </h1>
 
       <div class="request-form">
         <input
           type="email"
-          class="w-1/3 bg-white text-black rounded-full h-[40px] pl-6 border-b-2 border-b-dark-blue"
+          class="sm:w-1/3 w-full sm-only:mb-5 bg-white text-black rounded-full h-[40px] pl-6 border-b-2 border-b-dark-blue"
           placeholder="Your email address"
         />
         <app-button
